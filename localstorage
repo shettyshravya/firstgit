@@ -1,0 +1,11 @@
+const btn = document.querySelector('.btn');
+const name = document.querySelector('name');
+const email = document.querySelector('email');
+
+var nameinput = name.value();
+var emailinput = email.value();
+
+btn.addEventListener('click', (e) => {
+  e.preventDefault();
+  localStorage.setItem(nameinput,emailinput);
+});
