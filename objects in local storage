@@ -1,0 +1,13 @@
+<script type = "text/javascript">
+let myObj = {
+  name : "xyz",
+  age : 56
+};
+
+let myObj_str = JSON.stringify(myObj);
+
+localStorage.setItem("myObj",myObj_str);
+
+let myObj_destr = JSON.parse(localStorage.getItem("myObj));
+console.log(myObj_destr);
+</script>
