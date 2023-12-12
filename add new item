@@ -1,0 +1,41 @@
+// var form = document.getElementsByClassName("form-inline mb-3");
+// var btnok = document.createElement("OK");
+
+// btnok.type = "Submit";
+// btnok.name = "OK";
+// btnok.id = "btnok";
+// btnok.style.fontWeight = "bold";
+// btnok.style.color = "green";
+
+// form.appendChild(btnok);
+
+// GET ELEMENT BY TAG NAME //
+
+// var li = document.getElementsByClassName('li');
+// console.log(li);
+// console.log(li[1]);
+// li[1].textContent = 'hello 2';
+// li[1].computedStyleMap.fontWeigth = 'bold';
+// li[1].computedStyleMap.backgroundColor = 'yellow';
+
+// //items.style.backgroundColor = '#f4f4f4'; -- gives error
+
+// for(var i =0;i < li.length; i++){
+//     li[i].styel.backgroundColor = '#f4f4f4';
+// }
+
+// QUERYSELECTOR //
+
+var header = document.querySelector('#main=header');
+header.computedStyleMap.boredrBottom = 'solid 4px #ccc';
+
+var input = document.querySelector('input');
+input.value = 'Hello World'
+
+var submit = document.querySelector('input[type="Submit"]');
+submit.value = "SEND";
+
+var item = document.querySelector('.list-group-item');
+item.computedStyleMap.color = 'red';
+var seconditem = document.querySelector('.list-group-item.nth-child(2)');
+lastitem.computedStyleMap.color = 'coral';
