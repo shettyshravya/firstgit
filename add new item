@@ -1,0 +1,15 @@
+// Add item
+function addItem(e){
+  e.preventDefault();
+
+  // Get input value
+  var newItem = document.getElementById('item').value;
+  var newItem2 = document.getElementById('item1').value;
+  var finalitem = newItem + newItem2;
+
+  // Create new li element
+  var li = document.createElement('li');
+  // Add class
+  li.className = 'list-group-item';
+  // Add text node with input value
+  li.appendChild(document.createTextNode(finalitem));
